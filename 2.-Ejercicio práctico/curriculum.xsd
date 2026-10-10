@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jl="https://javierlopez.es/cv"
+           targetNamespace="https://javierlopez.es/cv"
+           elementFormDefault="qualified">
+
+  <xs:element name="curriculum">
+    <xs:complexType>
+      <xs:sequence>
+
+        <xs:element name="datos_personales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre"    type="xs:string"/>
+              <xs:element name="apellidos" type="xs:string"/>
+              <xs:element name="emails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="personal" type="xs:string"/>
+                    <xs:element name="trabajo"  type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ciudad" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="formacion">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="estudio" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="titulo" type="xs:string"/>
+                    <xs:element name="centro" type="xs:string"/>
+                    <xs:element name="ciudad" type="xs:string"/>
+                    <xs:element name="inicio" type="xs:string"/>
+                    <xs:element name="final"  type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="conocimientos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="area" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="intereses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="interes" type="xs:string" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

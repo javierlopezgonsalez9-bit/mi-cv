@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jl:curriculum xmlns:jl="https://javierlopez.es/cv"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="https://javierlopez.es/cv curriculum.xsd">
+
+  <jl:datos_personales>
+    <jl:nombre>Javier</jl:nombre>
+    <jl:apellidos>López González</jl:apellidos>
+    <jl:emails>
+      <jl:personal>javierlopez@ejemplo.com</jl:personal>
+    </jl:emails>
+    <jl:ciudad>Valencia</jl:ciudad>
+  </jl:datos_personales>
+
+  <jl:formacion>
+    <jl:estudio>
+      <jl:titulo>FP de Informática y Redes</jl:titulo>
+      <jl:centro>CEAC FP</jl:centro>
+      <jl:ciudad>Valencia</jl:ciudad>
+      <jl:inicio>2025</jl:inicio>
+      <jl:final>actualmente</jl:final>
+    </jl:estudio>
+  </jl:formacion>
+
+  <jl:conocimientos>
+    <jl:area><jl:nombre>Sistemas operativos</jl:nombre></jl:area>
+    <jl:area><jl:nombre>Redes</jl:nombre></jl:area>
+    <jl:area><jl:nombre>Montaje y mantenimiento de equipos</jl:nombre></jl:area>
+    <jl:area><jl:nombre>Linux</jl:nombre></jl:area>
+    <jl:area><jl:nombre>Windows</jl:nombre></jl:area>
+    <jl:area><jl:nombre>Virtualización</jl:nombre></jl:area>
+    <jl:area><jl:nombre>Seguridad informática</jl:nombre></jl:area>
+  </jl:conocimientos>
+
+  <jl:intereses>
+    <jl:interes>Administración de sistemas</jl:interes>
+    <jl:interes>Redes</jl:interes>
+    <jl:interes>Linux</jl:interes>
+    <jl:interes>Ciberseguridad</jl:interes>
+  </jl:intereses>
+
+</jl:curriculum>
